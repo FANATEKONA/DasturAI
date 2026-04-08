@@ -1,0 +1,29 @@
+{
+  "name": "dastur-angular",
+  "version": "1.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "node --env-file=.env.local server/dev.mjs",
+    "start:web": "ng serve --proxy-config proxy.conf.json",
+    "start:api": "node --env-file=.env.local server/telegram-proxy.mjs",
+    "build": "ng build"
+  },
+  "dependencies": {
+    "@angular/animations": "^17.3.0",
+    "@angular/common": "^17.3.0",
+    "@angular/compiler": "^17.3.0",
+    "@angular/core": "^17.3.0",
+    "@angular/forms": "^17.3.0",
+    "@angular/platform-browser": "^17.3.0",
+    "@angular/platform-browser-dynamic": "^17.3.0",
+    "@angular/router": "^17.3.0",
+    "rxjs": "~7.8.0",
+    "zone.js": "~0.14.0"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "^17.3.0",
+    "@angular/cli": "^17.3.0",
+    "@angular/compiler-cli": "^17.3.0",
+    "typescript": "~5.4.0"
+  }
+}

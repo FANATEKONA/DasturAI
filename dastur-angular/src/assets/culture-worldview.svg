@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <rect width="1200" height="800" fill="#eaf3f4"/>
+  <rect y="520" width="1200" height="280" fill="#a67845"/>
+  <path d="M0 520c120-80 220-120 320-112 80 6 150 36 242 32 98-5 156-36 232-36 82 0 142 35 228 40 60 4 102-8 178-30v106H0z" fill="#123b53"/>
+  <path d="M400 500c70-150 130-230 200-230s130 80 200 230" fill="none" stroke="#d4af37" stroke-width="18" stroke-linecap="round"/>
+  <path d="M500 500c34-76 68-114 100-114s66 38 100 114" fill="none" stroke="#ffffff" stroke-width="14" stroke-linecap="round"/>
+  <circle cx="600" cy="196" r="70" fill="#f3cd71"/>
+  <text x="120" y="130" fill="#123b53" font-family="Montserrat, Arial, sans-serif" font-size="54" font-weight="700">Worldview</text>
+</svg>

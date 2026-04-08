@@ -1,0 +1,65 @@
+<header class="navbar">
+  <a class="logo" routerLink="/" (click)="closeMenu()">
+    DASTUR
+    <span>AITUCAP</span>
+  </a>
+
+  <nav class="nav-menu" [class.active]="menuOpen" id="navMenu">
+    <ul class="nav-links">
+      <li>
+        <a
+          routerLink="/"
+          routerLinkActive="active-link"
+          [routerLinkActiveOptions]="{ exact: true }"
+          (click)="closeMenu()"
+        >
+          {{ 'nav-home' | translate }}
+        </a>
+      </li>
+      <li>
+        <a routerLink="/about" routerLinkActive="active-link" (click)="closeMenu()">
+          {{ 'nav-about' | translate }}
+        </a>
+      </li>
+      <li>
+        <a routerLink="/madeniyet" routerLinkActive="active-link" (click)="closeMenu()">
+          {{ 'nav-madeniyet' | translate }}
+        </a>
+      </li>
+      <li>
+        <a routerLink="/dasturler" routerLinkActive="active-link" (click)="closeMenu()">
+          {{ 'nav-dasturler' | translate }}
+        </a>
+      </li>
+      <li>
+        <a routerLink="/location" routerLinkActive="active-link" (click)="closeMenu()">
+          {{ currentLang === 'kz' ? 'Локация' : currentLang === 'en' ? 'Locations' : 'Локация' }}
+        </a>
+      </li>
+      <li>
+        <a routerLink="/download" routerLinkActive="active-link" class="btn-download-nav" (click)="closeMenu()">
+          {{ 'nav-dl' | translate }}
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="nav-controls">
+    <div class="lang-switcher">
+      <button type="button" (click)="setLang('kz')" [class.active]="currentLang === 'kz'">KZ</button>
+      <button type="button" (click)="setLang('ru')" [class.active]="currentLang === 'ru'">RU</button>
+      <button type="button" (click)="setLang('en')" [class.active]="currentLang === 'en'">EN</button>
+    </div>
+    <button class="menu-toggle" (click)="menuOpen = !menuOpen">
+      <i class="fas fa-bars"></i>
+    </button>
+  </div>
+</header>
+
+<router-outlet></router-outlet>
+
+<footer>
+  <div class="footer-bottom">
+    <p>{{ 'footer-text' | translate }}</p>
+  </div>
+</footer>

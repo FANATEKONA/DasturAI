@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <rect width="1200" height="800" fill="#f5f1ea"/>
+  <rect x="160" y="120" width="760" height="500" rx="26" fill="#fffaf0" stroke="#d4af37" stroke-width="8"/>
+  <rect x="230" y="190" width="620" height="40" rx="20" fill="#123b53" opacity="0.14"/>
+  <rect x="230" y="280" width="520" height="24" rx="12" fill="#123b53" opacity="0.22"/>
+  <rect x="230" y="340" width="560" height="24" rx="12" fill="#123b53" opacity="0.18"/>
+  <rect x="230" y="400" width="470" height="24" rx="12" fill="#123b53" opacity="0.18"/>
+  <rect x="230" y="460" width="530" height="24" rx="12" fill="#123b53" opacity="0.2"/>
+  <circle cx="945" cy="260" r="110" fill="#123b53"/>
+  <path d="M945 184v150" stroke="#f6ecd3" stroke-width="16" stroke-linecap="round"/>
+  <path d="M885 236c30-44 90-44 120 0" stroke="#f6ecd3" stroke-width="16" fill="none" stroke-linecap="round"/>
+  <path d="M885 282c30 44 90 44 120 0" stroke="#f6ecd3" stroke-width="16" fill="none" stroke-linecap="round"/>
+  <text x="180" y="100" fill="#123b53" font-family="Montserrat, Arial, sans-serif" font-size="54" font-weight="700">Language &amp; Literature</text>
+</svg>

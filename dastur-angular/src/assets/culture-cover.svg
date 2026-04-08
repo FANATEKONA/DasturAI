@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 900">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0b7285"/>
+      <stop offset="100%" stop-color="#123b53"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="900" rx="36" fill="url(#bg)"/>
+  <rect x="36" y="36" width="528" height="828" rx="24" fill="none" stroke="#d4af37" stroke-width="6"/>
+  <circle cx="300" cy="255" r="106" fill="#d4af37" opacity="0.16"/>
+  <path d="M180 340c42-64 89-95 120-95s78 31 120 95" fill="none" stroke="#f8f4e8" stroke-width="16" stroke-linecap="round"/>
+  <path d="M196 520c40-38 71-58 104-58s64 20 104 58" fill="none" stroke="#d4af37" stroke-width="14" stroke-linecap="round"/>
+  <path d="M155 612h290" stroke="#f8f4e8" stroke-width="10" stroke-linecap="round"/>
+  <path d="M178 672h244" stroke="#f8f4e8" stroke-width="10" stroke-linecap="round" opacity="0.7"/>
+  <text x="300" y="130" text-anchor="middle" fill="#f8f4e8" font-size="46" font-family="Montserrat, Arial, sans-serif" font-weight="700">DASTUR</text>
+  <text x="300" y="182" text-anchor="middle" fill="#d4af37" font-size="24" font-family="Montserrat, Arial, sans-serif" letter-spacing="6">MADENIYET</text>
+  <text x="300" y="760" text-anchor="middle" fill="#f8f4e8" font-size="28" font-family="Montserrat, Arial, sans-serif">Music • Craft • Language • Worldview</text>
+</svg>

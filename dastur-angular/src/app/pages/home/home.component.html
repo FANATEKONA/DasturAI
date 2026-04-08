@@ -1,0 +1,142 @@
+<main>
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content fade-in">
+      <p class="eyebrow eyebrow-light">Digital Heritage Platform</p>
+      <h1>{{ 'hero-title' | translate }}</h1>
+      <p>{{ 'hero-desc' | translate }}</p>
+
+      <div class="hero-btns">
+        <button class="btn-primary" type="button" (click)="goToDownload()">
+          {{ 'hero-btn' | translate }}
+        </button>
+        <button class="btn-outline" type="button" (click)="scrollToValues()">
+          {{ 'hero-more' | translate }}
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt-bg" id="sect-values">
+    <h2 class="section-title">{{ 'val-title' | translate }}</h2>
+
+    <div class="card-grid">
+      <article class="glass-card">
+        <div class="card-icon"><i class="fas fa-shield-heart"></i></div>
+        <h3>{{ 'v1-h' | translate }}</h3>
+        <p>{{ 'v1-p' | translate }}</p>
+      </article>
+
+      <article class="glass-card">
+        <div class="card-icon"><i class="fas fa-microchip"></i></div>
+        <h3>{{ 'v2-h' | translate }}</h3>
+        <p>{{ 'v2-p' | translate }}</p>
+      </article>
+
+      <article class="glass-card">
+        <div class="card-icon"><i class="fas fa-users"></i></div>
+        <h3>{{ 'v3-h' | translate }}</h3>
+        <p>{{ 'v3-p' | translate }}</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">{{ 'feat-title' | translate }}</h2>
+
+    <div class="card-grid">
+      <article class="feature-card">
+        <h3>{{ 'f1-h' | translate }}</h3>
+        <p>{{ 'f1-p' | translate }}</p>
+      </article>
+
+      <article class="feature-card highlight">
+        <h3>{{ 'f2-h' | translate }}</h3>
+        <p>{{ 'f2-p' | translate }}</p>
+      </article>
+
+      <article class="feature-card">
+        <h3>{{ 'f3-h' | translate }}</h3>
+        <p>{{ 'f3-p' | translate }}</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section alt-bg">
+    <p class="eyebrow centered">{{ 'concept-kicker' | translate }}</p>
+    <h2 class="section-title">{{ 'concept-title' | translate }}</h2>
+    <p class="section-lead">{{ 'concept-desc' | translate }}</p>
+
+    <div class="steps-grid">
+      <article class="step-card">
+        <span class="step-number">01</span>
+        <h3>{{ 'step1-h' | translate }}</h3>
+        <p>{{ 'step1-p' | translate }}</p>
+      </article>
+
+      <article class="step-card">
+        <span class="step-number">02</span>
+        <h3>{{ 'step2-h' | translate }}</h3>
+        <p>{{ 'step2-p' | translate }}</p>
+      </article>
+
+      <article class="step-card">
+        <span class="step-number">03</span>
+        <h3>{{ 'step3-h' | translate }}</h3>
+        <p>{{ 'step3-p' | translate }}</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section alt-bg">
+    <div class="suggest-container glass-card">
+      <h2>{{ 'sugg-title' | translate }}</h2>
+      <p>{{ 'sugg-desc' | translate }}</p>
+
+      <form class="suggest-form" (ngSubmit)="submitForm()">
+        <input
+          [(ngModel)]="inputName"
+          [placeholder]="'input-name-ph' | translate"
+          name="name"
+          type="text"
+        />
+        <input
+          [(ngModel)]="inputTradition"
+          [placeholder]="'input-trad-ph' | translate"
+          name="tradition"
+          type="text"
+        />
+        <textarea
+          [(ngModel)]="inputText"
+          [placeholder]="'input-text-ph' | translate"
+          name="description"
+          rows="5"
+        ></textarea>
+        <button class="btn-primary" [disabled]="sending" type="submit">
+          {{ 'btn-send' | translate }}
+        </button>
+      </form>
+
+      <p *ngIf="formSubmitted" class="success-msg">
+        {{ 'form-success-text' | translate }}
+      </p>
+      <p *ngIf="submitError" class="error-msg">
+        {{ submitErrorText }}
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="cta-panel">
+      <div>
+        <p class="eyebrow">{{ 'cta-kicker' | translate }}</p>
+        <h2>{{ 'cta-title' | translate }}</h2>
+        <p>{{ 'cta-desc' | translate }}</p>
+      </div>
+
+      <button class="btn-primary" type="button" (click)="goToDownload()">
+        {{ 'cta-btn' | translate }}
+      </button>
+    </div>
+  </section>
+</main>

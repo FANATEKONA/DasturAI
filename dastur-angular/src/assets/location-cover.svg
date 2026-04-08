@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 900">
+  <defs>
+    <linearGradient id="locbg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0f3d53"/>
+      <stop offset="100%" stop-color="#1e8b84"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="900" rx="36" fill="url(#locbg)"/>
+  <circle cx="430" cy="170" r="70" fill="#f4d36d"/>
+  <path d="M0 620c80-40 160-80 260-82 88-2 130 20 212 20 40 0 76-7 128-24v366H0z" fill="#285e45"/>
+  <path d="M40 690c92-88 160-156 240-156 58 0 104 34 164 34 42 0 82-18 156-60v392H40z" fill="#8c6531"/>
+  <path d="M260 510c50-100 90-150 120-150s70 50 120 150" fill="none" stroke="#ffffff" stroke-width="16" stroke-linecap="round"/>
+  <text x="300" y="108" text-anchor="middle" fill="#ffffff" font-size="40" font-family="Montserrat, Arial, sans-serif" font-weight="700">LOKACIYA</text>
+</svg>

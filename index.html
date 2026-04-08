@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dästür — Digital Heritage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo" onclick="showPage('landing')">
+            DÄSTÜR
+            <span>AITUCAP</span>
+        </div>
+        
+        <nav class="nav-menu" id="navMenu">
+            <ul class="nav-links">
+                <li><a href="javascript:void(0)" onclick="showPage('landing', 'sect-values')" id="nav-about">О проекте</a></li>
+                <li><a href="javascript:void(0)" onclick="showPage('landing', 'sect-features')" id="nav-features">Возможности</a></li>
+                <li><a href="javascript:void(0)" onclick="showPage('resources')" id="nav-resources">Ресурсы</a></li>
+                <li><a href="javascript:void(0)" onclick="showPage('download')" class="btn-download-nav" id="nav-dl">Скачать</a></li>
+            </ul>
+        </nav>
+
+        <div class="nav-controls">
+            <div class="lang-switcher">
+                <button onclick="setLanguage('kz')">KZ</button>
+                <button onclick="setLanguage('ru')">RU</button>
+                <button onclick="setLanguage('en')">EN</button>
+            </div>
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <div id="content-area">
+        <main id="resources-page" class="hidden">
+            <section class="section">
+                
+                <h2 class="section-title" id="res-title">Ресурсы проекта</h2>
+
+                <div class="res-hero-split">
+                    
+                    <div class="res-left-col">
+                        <div class="res-intro-card">
+                            <p id="res-intro-text">
+                                Қазақ халқының табиғат-анамен үндес тіршілік кеше отырып қалыптастырған салт-дәстүрі – «адамгершілік» деп аталатын ұлы ұғымның алтын қазығы. Алтын қазықтан адаспай, бетті соған бұрғанда ғана елдіктің іргесі бекіп, адам аты асқақтай түсетінін қазақ елінің өткен өмір жолы дәлелдеп берді.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="res-right-col book-showcase">
+                        <div class="book-container">
+                            <div class="book">
+                                <img src="https://s.f.kz/prod/349/348469_1000.jpg" alt="Книга Салт-дәстүрлер" class="book-cover">
+                            </div>
+                            <div class="book-shadow"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="card-grid" style="margin-top: 60px;">
+                    <div class="glass-card resource-card highlight-card">
+                        <div class="card-icon"><i class="fas fa-book-open"></i></div>
+                        <h3 id="res-source-h">Ғылыми база</h3>
+                        <p id="res-source-p">
+                            Барлық дәстүрлер мен олардың сипаттамалары Сейіт Кенжеахметұлының <strong>«Қазақтың салт-дәстүрлері мен әдет-ғұрыптары»</strong> еңбегінен алынды.
+                        </p>
+                    </div>
+
+                    <div class="glass-card resource-card">
+                        <div class="card-icon"><i class="fas fa-user-graduate"></i></div>
+                        <h3 id="res-author-h">Сейіт Кенжеахметұлы</h3>
+                        <p id="res-author-p">
+                            Белгілі қаламгер, этнограф Сейіт Кенжеахметұлы саналы ғұмырын осы бай мұраны жинақтауға арнап, мол қазынаны энциклопедиялық жүйеге түсірді.
+                        </p>
+                    </div>
+
+                    <div class="glass-card resource-card">
+                        <div class="card-icon"><i class="fas fa-feather-alt"></i></div>
+                        <h3 id="res-info-h">Мазмұны</h3>
+                        <p id="res-info-p">
+                            Бұрын көп айтыла қоймаған ырым мен тыйым, жөн жосық, жол-жоралғы, ұлттық қағида, ғұрып, әдеп мен әдет сараланған.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <main id="landing-page">
+            <section class="hero">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <h1 id="hero-title" class="fade-in" style="color: white;">Оживи наследие предков</h1>
+                    <p id="hero-desc" class="fade-in" style="color: white;">Интерактивная платформа казахских традиций, созданная для нового поколения.</p>
+                    <div class="hero-btns fade-in">
+                        <button class="btn-primary" onclick="showPage('download')" id="hero-btn">Начать знакомство</button>
+                        <button class="btn-outline" onclick="scrollToSection('sect-values')" id="hero-more">Узнать больше</button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="sect-values" class="section">
+                <h2 class="section-title" id="val-title">Ценность Dästür</h2>
+                <div class="card-grid">
+                    <div class="glass-card">
+                        <div class="card-icon"><i class="fas fa-history"></i></div>
+                        <h3 id="v1-h">Аутентичность</h3>
+                        <p id="v1-p">Глубокое исследование каждого обряда совместно с этнографами.</p>
+                    </div>
+                    <div class="glass-card">
+                        <div class="card-icon"><i class="fas fa-mobile-alt"></i></div>
+                        <h3 id="v2-h">Цифровизация</h3>
+                        <p id="v2-p">Традиции теперь в удобном формате: от видео-уроков до AI-советов.</p>
+                    </div>
+                    <div class="glass-card">
+                        <div class="card-icon"><i class="fas fa-users"></i></div>
+                        <h3 id="v3-h">Сообщество</h3>
+                        <p id="v3-p">Объединяем молодежь вокруг культурного кода Казахстана.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="sect-features" class="section alt-bg">
+                <h2 class="section-title" id="feat-title">Функции приложения</h2>
+                <div class="card-grid">
+                    <div class="feature-card">
+                        <h3 id="f1-h">Энциклопедия</h3>
+                        <p id="f1-p">Полный каталог: от "Шілдехана" до "Беташар".</p>
+                    </div>
+                    <div class="feature-card highlight">
+                        <h3 id="f2-h">Dästür AI</h3>
+                        <p id="f2-p">Умный ассистент ответит на любой вопрос о правилах обрядов.</p>
+                    </div>
+                    <div class="feature-card">
+                        <h3 id="f3-h">Многоязычность</h3>
+                        <p id="f3-p">Полная локализация на казахский, русский и английский языки для продвижения наследия во всем мире.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="sect-team" class="hidden">
+                <h2 class="section-title" id="team-title">Команда проекта</h2>
+                <div class="team-grid">
+                    <div class="team-card scroll-hidden">
+                        <div class="member-photo-container">
+                            <img src="https://via.placeholder.com/150" alt="Team Member" class="member-photo">
+                        </div>
+                        <h3 id="t1-n">Имя Фамилия</h3>
+                        <p class="member-role" id="t1-r">Role / Position</p>
+                        <div class="member-socials">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-card scroll-hidden" style="transition-delay: 0.2s">
+                        <div class="member-photo-container">
+                            <img src="https://via.placeholder.com/150" alt="Team Member" class="member-photo">
+                        </div>
+                        <h3 id="t2-n">Имя Фамилия</h3>
+                        <p class="member-role" id="t2-r">Role / Position</p>
+                        <div class="member-socials">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-card scroll-hidden" style="transition-delay: 0.4s">
+                        <div class="member-photo-container">
+                            <img src="https://via.placeholder.com/150" alt="Team Member" class="member-photo">
+                        </div>
+                        <h3 id="t3-n">Имя Фамилия</h3>
+                        <p class="member-role" id="t3-r">Role / Position</p>
+                        <div class="member-socials">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="sect-suggest" class="section alt-bg">
+                <div class="suggest-container glass-card">
+                    <h2 id="sugg-title">Знаете редкую традицию?</h2>
+                    <p id="sugg-desc">Помогите нам сохранить наследие. Опишите обычай, и он появится в Dästür.</p>
+                    
+                    <form id="suggestForm" class="suggest-form">
+                        <input type="text" id="input-name" required>
+                        <input type="text" id="input-tradition" required>
+                        <textarea id="input-text" rows="4" placeholder="Описание традиции"></textarea>
+                        <button type="submit" class="btn-primary" id="btn-send">Отправить</button>
+                    </form>
+                    
+                    <div id="form-success" class="hidden success-msg">
+                        <i class="fas fa-check-circle"></i> 
+                        <span id="form-success-text">Рахмет! Ваше предложение принято.</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <main id="download-page" class="hidden">
+            <section class="download-hero">
+                <div class="dl-overlay"></div> <div class="dl-content">
+                    <div class="dl-container">
+                        <div class="dl-info">
+                            <h2 id="dl-title" class="fade-in-up">Приложение всегда с тобой</h2>
+                            <p id="dl-desc" class="fade-in-up" style="transition-delay: 0.2s;">Присоединяйтесь к бета-тестированию на AITUCUP Hackathon.</p>
+                            <div class="dl-platforms fade-in-up" style="transition-delay: 0.4s;">
+                                <a href="#" class="platform-btn google-play">
+                                    <i class="fab fa-google-play"></i>
+                                    <span>Google Play</span>
+                                </a>
+                                <a href="#" class="platform-btn apple-store disabled">
+                                    <i class="fab fa-apple"></i>
+                                    <span>App Store (Soon)</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="dl-visual fade-in-up" style="transition-delay: 0.6s;">
+                            <div class="phone-mock">
+                                <div class="phone-screen">
+                                    <img src="https://res.cloudinary.com/dpzy965a9/image/upload/v1768578800/cld-sample-4.jpg" alt="Dastur App UI">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer-bottom">
+            <p id="footer-text">© 2026 Dästür.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="sky" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#123b53"/>
+      <stop offset="100%" stop-color="#0b7285"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#sky)"/>
+  <rect y="520" width="1200" height="280" fill="#c89f43"/>
+  <circle cx="900" cy="140" r="74" fill="#f5d77c" opacity="0.95"/>
+  <path d="M100 545c140-70 250-110 340-100 80 8 170 38 280 24 88-11 170-56 280-44 48 5 104 20 200 68v107H100z" fill="#8d6e2c"/>
+  <ellipse cx="560" cy="300" rx="140" ry="172" fill="#d4af37"/>
+  <ellipse cx="560" cy="300" rx="84" ry="116" fill="#f6ecd3"/>
+  <path d="M700 286h238" stroke="#f6ecd3" stroke-width="22" stroke-linecap="round"/>
+  <path d="M920 250v72" stroke="#f6ecd3" stroke-width="18" stroke-linecap="round"/>
+  <path d="M760 250v72M820 250v72M880 250v72" stroke="#f6ecd3" stroke-width="9" stroke-linecap="round"/>
+  <circle cx="933" cy="358" r="30" fill="#f6ecd3"/>
+  <text x="120" y="140" fill="#ffffff" font-family="Montserrat, Arial, sans-serif" font-size="54" font-weight="700">Kazakh Music</text>
+</svg>
