@@ -19,12 +19,12 @@ import { TranslationService } from '../../translation.service';
               <p id="res-intro-text">{{ t('res-intro-text') }}</p>
             </div>
           </div>
-          <div class="res-right-col book-showcase">
-            <div class="book-container">
-              <div class="book">
-                <img src="assets/culture-cover.svg" alt="Traditions cover" class="book-cover">
-              </div>
-              <div class="book-shadow"></div>
+          <div class="res-right-col">
+            <div class="study-cta-card">
+              <a class="study-link-button prominent" href="https://qazaq-app.vercel.app/" target="_blank" rel="noreferrer">
+                {{ studyLinkText }}
+                <i class="fas fa-arrow-up-right-from-square"></i>
+              </a>
             </div>
           </div>
         </div>
@@ -124,6 +124,14 @@ export class DasturlarComponent {
       : this.lang === 'kz'
         ? 'Ағымдағы іздеу мен сүзгі бойынша ештеңе табылмады.'
         : 'No traditions match the current search and filter.';
+  }
+
+  get studyLinkText(): string {
+    return this.lang === 'ru'
+      ? 'Начать изучение языка'
+      : this.lang === 'kz'
+        ? 'Тілді үйренуді бастау'
+        : 'Start learning the language';
   }
 
   get filterOptions() {

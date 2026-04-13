@@ -22,6 +22,13 @@ import { TranslationService } from '../../translation.service';
             <h1 class="detail-title">{{ content.title }}</h1>
             <p class="detail-summary">{{ content.summary }}</p>
 
+            <div class="study-cta-card inline" *ngIf="showLanguageLink">
+              <a class="study-link-button prominent" href="https://qazaq-app.vercel.app/" target="_blank" rel="noreferrer">
+                {{ studyLinkText }}
+                <i class="fas fa-arrow-up-right-from-square"></i>
+              </a>
+            </div>
+
             <div class="detail-grid">
               <article class="detail-section" *ngFor="let section of content.sections">
                 <h3>{{ section.title }}</h3>
@@ -77,5 +84,17 @@ export class MadeniyetDetailComponent implements OnInit {
 
   get madeniyetLabel(): string {
     return this.ts.t('mad-title');
+  }
+
+  get showLanguageLink(): boolean {
+    return this.topic?.slug === 'language';
+  }
+
+  get studyLinkText(): string {
+    return this.ts.currentLang === 'ru'
+      ? 'Начать изучение языка'
+      : this.ts.currentLang === 'kz'
+        ? 'Тілді үйренуді бастау'
+        : 'Start learning the language';
   }
 }
